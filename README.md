@@ -1,75 +1,70 @@
 <h1>RIDE SCOPE | JAVA PROGRAM</h1>
-<p>A simple back-end program that allows users to:</p>
-<ul>
-  <li>Add new contacts with names, phone numbers, and email addresses</li>
-  <li>Search for contacts by name or other information</li>
-  <li>Edit existing contact information</li>
-  <li>Delete unwanted contacts</li>
-  <li>View a complete list of all saved contacts</li>
-</ul>
 
-<h2>Features</h2>
+<p>A ride-hailing fleet management system that allows users to:</p>
 <ul>
-  <li><strong>Add Contacts</strong> - Store names, phone numbers, email addresses, and additional notes</li>
-  <li><strong>View Contacts</strong> - Browse through your complete contact list</li>
-  <li><strong>Search</strong> - Quickly find contacts by name, number, or other details</li>
-  <li><strong>Edit Contacts</strong> - Update information for existing contacts</li>
-  <li><strong>Delete Contacts</strong> - Remove contacts you no longer need</li>
-  <li><strong>Persistent Storage</strong> - Your contacts are saved automatically</li>
-  <li><strong>Categories</strong> - Organize contacts into groups (family, friends, work, etc.)</li>
+  <li>Add new taxis</li>
+  <li>Request rides for customers</li>
+  <li>Monitor ongoing rides and their status</li>
+  <li>Calculate ride duration upon completion</li>
 </ul>
 
 <h2>Requirements</h2>
 <ul>
-  <li>C++ compiler (g++, clang++, MSVC, etc.)</li>
-  <li>Standard C++ libraries</li>
-  <li>Minimum C++11 support</li>
-  <li>64MB of RAM</li>
-  <li>Text editor or IDE (Visual Studio, Code::Blocks, etc.)</li>
+  <li>Java Development Kit (JDK) 8 or higher</li>
+  <li>64MB of RAM (minimum)</li>
+  <li>Text editor or IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.)</li>
 </ul>
 
 <h2>Installation</h2>
-<pre>
-  
-# Clone the repository
-git clone https://github.com/VincentAgra/cpp-contacts-manager.git](https://github.com/VincentAgra/ContactsSoftware-cpp-program.git
 
-# Navigate to the project directory
-cd ContactsSoftware-cpp-program
-
-# Compile the source code
-g++ -o contacts main.cpp Contact.cpp ContactUtility.cpp -std=c++17
-
-# Run the program
-./ConsoleSoftware
-</pre>
-
-<h2>Usage</h2>
-<p>After launching the program, you'll be presented with a menu of options:</p>
 <ol>
-  <li>View All Contacts</li>
-  <li>Add New Contact</li>
-  <li>Search Contacts</li>
-  <li>Edit Contact</li>
-  <li>Delete Contact</li>
-  <li>Exit</li>
+  <li><strong>Install Prerequisites</strong>
+    <p>Download and install <a href="https://www.oracle.com/java/technologies/downloads/">Java JDK 8+</a> and an IDE like <a href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA</a>, <a href="https://www.eclipse.org/downloads/">Eclipse</a>, or <a href="https://netbeans.apache.org/download/index.html">NetBeans</a>.</p>
+  </li>
+  
+  <li><strong>Get the Code</strong>
+    <p>Download the source files or clone the repository:</p>
+    <pre>git clone https://github.com/VincentAgra/RideScope-java-program.git</pre>
+  </li>
+  
+  <li><strong>Open in IDE</strong>
+    <p>Import the project into your IDE: File → Open/Import → select the project folder.</p>
+  </li>
+  
+  <li><strong>Run the Program</strong>
+    <p>Open Main.java, right-click, and select "Run" to launch the application.</p>
+  </li>
 </ol>
 
-<p>Follow the on-screen prompts to navigate through the application and manage your contacts.</p>
+<h2>Usage</h2>
+<p>The program demonstrates the functionality of a ride-hailing system:</p>
+<ol>
+  <li>Taxis are added to the fleet with their initial locations</li>
+  <li>Customers request rides with pickup and dropoff locations</li>
+  <li>The system automatically assigns the nearest available taxi to each ride</li>
+  <li>Taxis update their locations as they move</li>
+  <li>Rides are tracked from start to completion</li>
+  <li>The system calculates and displays ride duration upon completion</li>
+</ol>
+
+<p>To customize the program:</p>
+<ul>
+  <li>Add more taxis with different IDs and starting locations</li>
+  <li>Create additional ride requests with different customer information</li>
+  <li>Modify the taxi assignment algorithm in <code>FleetManagementSystem.java</code></li>
+  <li>Extend ride functionality by adding fare calculation or ratings</li>
+</ul>
 
 <h2>Technologies Used</h2>
 <ul>
-  <li><strong>C++</strong> - Primary programming language</li>
-  <li><strong>Standard Template Library (STL)</strong> - For data structures and algorithms</li>
-  <li><strong>File I/O</strong> - For persistent storage of contacts</li>
-  <li><strong>Object-Oriented Design</strong> - For modular and maintainable code</li>
-  <li><strong>Console UI</strong> - For user interaction</li>
+  <li><strong>Java</strong> - Primary programming language with object-oriented design</li>
+  <li><strong>Java Collections Framework</strong> - ArrayList for storing taxis and rides</li>
+  <li><strong>Java Stream API</strong> - For filtering and finding nearest taxis</li>
+  <li><strong>Java Time API</strong> - For tracking ride durations using LocalDateTime</li>
+  <li><strong>Object-Oriented Design</strong> - Classes for Taxi, Ride, and FleetManagementSystem</li>
+  <li><strong>Mathematical Algorithms</strong> - Distance calculation between coordinates</li>
 </ul>
 
 <h2>Contact</h2>
 <p>Email: <a href="mailto:AGRAVJ007@GMAIL.COM">AGRAVJ007@GMAIL.COM</a></p>
 <p>LinkedIn: <a href="https://www.linkedin.com/in/vincent-agra-329648264/?trk=opento_sprofile_goalscard">Vincent Agra</a></p>
-
-<h2>Contact</h2>
-<p>Vincent Agra - <a href="mailto:vincent.agra@example.com">vincent.agra@example.com</a></p>
-<p>Project Link: <a href="https://github.com/VincentAgra/RideScope-java-app">https://github.com/VincentAgra/RideScope-java-app</a></p>
